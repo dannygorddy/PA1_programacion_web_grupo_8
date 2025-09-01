@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Tienda Online — Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Mi Tienda</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito <span class="badge bg-info" id="badgeCarrito">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-4 text-center bg-light">
+    <div class="container">
+      <h1 class="h3 m-0">Catálogo</h1>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Tabs de categorías -->
+    <!-- Selector de categorías (tarjetas) -->
+<section class="container my-4">
+  <div class="row g-3 cat-grid">
+    <div class="col-md-4">
+      <a href="#abarrotes" class="cat-card" data-cat-link="#abarrotes" aria-label="Ver Abarrotes">
+        <div class="cat-icon"><i class="bi bi-basket-fill"></i></div>
+        <h3 class="cat-title">Abarrotes</h3>
+        <p class="cat-desc">Todo para tu despensa.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="#juguetes" class="cat-card" data-cat-link="#juguetes" aria-label="Ver Juguetería">
+        <div class="cat-icon"><i class="bi bi-joystick"></i></div>
+        <h3 class="cat-title">Juguetería</h3>
+        <p class="cat-desc">Diversión asegurada.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="#oficina" class="cat-card" data-cat-link="#oficina" aria-label="Ver Oficina">
+        <div class="cat-icon"><i class="bi bi-journal-text"></i></div>
+        <h3 class="cat-title">Oficina</h3>
+        <p class="cat-desc">Organiza tu día.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Abarrotes -->
+    <section id="abarrotes" class="categoria">
+      <h2 class="h4 mb-3">Abarrotes</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/zucaritas.webp" class="card-img-top" alt="Zucaritas">
+            <div class="card-body">
+              <h5 class="card-title">Cereal KELLOGG'S Zucaritas 420g</h5>
+              <p class="card-text">S/ 14.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Zucaritas" data-precio="14.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/Arroz.jpg" class="card-img-top" alt="Arroz Costeño">
+            <div class="card-body">
+              <h5 class="card-title">Arroz Extra COSTEÑO 750g</h5>
+              <p class="card-text">S/ 4.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Arroz COSTEÑO" data-precio="4.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/aceite.webp" class="card-img-top" alt="Aceite Primor">
+            <div class="card-body">
+              <h5 class="card-title">Aceite Vegetal PRIMOR 5L</h5>
+              <p class="card-text">S/ 46.50</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Aceite PRIMOR" data-precio="46.5">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Juguetería -->
+    <section id="juguetes" class="categoria">
+      <h2 class="h4 mb-3">Juguetería</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/hotwheels.jpg" class="card-img-top" alt="Hot Wheels RC">
+            <div class="card-body">
+              <h5 class="card-title">HOT WHEELS </h5>
+              <p class="card-text">S/ 49.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="HOT WHEELS" data-precio="49.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/barbie.jpg" class="card-img-top" alt="Barbie Perrito silla de ruedas">
+            <div class="card-body">
+              <h5 class="card-title">Barbie</h5>
+              <p class="card-text">S/ 59.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Muñeco Barbie" data-precio="59.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/dino.jpg" class="card-img-top" alt="T-Rex">
+            <div class="card-body">
+              <h5 class="card-title">Jurassic  T-Rex</h5>
+              <p class="card-text">S/ 289.00</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Dinosaurio Jurassic" data-precio="289">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oficina -->
+    <section id="oficina" class="categoria">
+      <h2 class="h4 mb-3">Oficina</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/agenda.jpg" class="card-img-top" alt="Agenda Artesco">
+            <div class="card-body">
+              <h5 class="card-title">Agenda ARTESCO</h5>
+              <p class="card-text">S/ 12.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Agenda ARTESCO" data-precio="12.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/boligrafo.jpg" class="card-img-top" alt="Bolígrafo Pilot">
+            <div class="card-body">
+              <h5 class="card-title">Bolígrafos (6 und)</h5>
+              <p class="card-text">S/ 12.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Bolígrafo PILOT" data-precio="12.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 producto">
+            <img src="img/papel.jpg" class="card-img-top" alt="Papel A4">
+            <div class="card-body">
+              <h5 class="card-title">Papel BOND A4 100h</h5>
+              <p class="card-text">S/ 11.90</p>
+              <button class="btn btn-success w-100 add-to-cart" data-nombre="Papel ULTRA A4" data-precio="11.9">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 bg-dark text-center text-white">
+    <small>© 2025 Mi Tienda Online</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- App -->
+  <script src="js/script.js"></script>
+</body>
+</html>
