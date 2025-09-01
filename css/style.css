@@ -1,4 +1,3 @@
-/* ===== Tema verde corporativo (si aún no lo tienes) ===== */
 :root{
   --brand-green:#1d8223;
   --brand-green-dark:#388E3C;
@@ -42,7 +41,7 @@ footer{ background-color:var(--brand-green); color:#fff; }
 .cat-title{ font-size:1.15rem; margin:.35rem 0 .15rem; font-weight:700; }
 .cat-desc{ margin:0; color:#666; font-size:.95rem; }
 
-/* Imágenes de cards de producto consistentes */
+/* Imágenes de cards de producto  */
 .producto img,.card-img-top{
   width:100%;
   height:220px;
@@ -101,12 +100,11 @@ button:focus, a:focus, input:focus {
 /* Separadores de secciones */
 .categoria { margin-bottom: 2rem; }
 
-/* === Botón flotante de carrito (FAB) === */
 /* === Botón flotante de carrito (debajo del navbar) === */
 #cart-fab {
   position: fixed;
-  top: 80px;               /* ajusta según la altura de tu navbar */
-  right: 16px;             /* pegado al lado derecho */
+  top: 80px;              
+  right: 16px;            
   z-index: 1050;
   width: 56px;
   height: 56px;
@@ -145,15 +143,15 @@ button:focus, a:focus, input:focus {
   40%  { transform: scale(1.12); }
   100% { transform: scale(1); }
 }
-/* Todas las imágenes dentro de productos tendrán mismo tamaño */
+
 .producto img,
 .producto img,
 .card-img-top {
   width: 100%;
-  height: 220px;          /* altura fija igual para todas */
-  object-fit: contain;    /* asegura que la imagen completa se vea */
+  height: 220px;          
+  object-fit: contain;   
   object-position: center;
-  background-color: #fff; /* rellena los bordes vacíos con blanco */
-  padding: 5px;           /* espacio alrededor para que no quede “pegada” */
+  background-color: #fff; 
+  padding: 5px;           
 }
 
