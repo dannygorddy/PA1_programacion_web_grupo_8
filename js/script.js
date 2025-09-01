@@ -1,5 +1,4 @@
 // ==== Reset de historial en recarga de página ====
-// Borra pedidos/facturas SOLO cuando el usuario hace reload (F5/Ctrl+R/Cmd+R)
 (function resetHistorialOnReload() {
   try {
     const navEntry = performance.getEntriesByType?.('navigation')?.[0];
@@ -8,11 +7,11 @@
 
     if (isReload) {
       // Borra todas las variantes de claves que puedas estar usando
-      localStorage.removeItem('orders');       // tu clave actual para pedidos
-      localStorage.removeItem('pedidos');      // por si en algún lado usaste 'pedidos'
-      localStorage.removeItem('facturas');     // por si usaste 'facturas'
-      localStorage.removeItem('lastOrderId');  // último id guardado para factura.html
-      // Nota: NO tocamos 'carrito'
+      localStorage.removeItem('orders');      
+      localStorage.removeItem('pedidos');     
+      localStorage.removeItem('facturas');     
+      localStorage.removeItem('lastOrderId'); 
+     
       console.info('[reset] Historial de pedidos y facturas limpiado por recarga.');
     }
   } catch (e) {
@@ -42,11 +41,11 @@ function escapeHTML(str) {
 const TAX_RATE = 0.18;
 const SHIPPING_DELIVERY = 10.00;
 const SHIPPING_RECOJO = 0.00;
-let envioActual = SHIPPING_DELIVERY; // por defecto delivery
+let envioActual = SHIPPING_DELIVERY;
 let descuentoActual = 0;
 
 function calcularDesglose() {
-  // si existe totalMontoSeleccionado() usamos lo seleccionado; si no, el total clásico
+ 
   const sub = typeof totalMontoSeleccionado === "function" ? totalMontoSeleccionado() : totalMonto();
   const igv = sub * TAX_RATE;
   const total = sub + igv + envioActual - descuentoActual;
@@ -86,7 +85,6 @@ function pulseFAB() {
   fab.classList.add("pulse");
 }
 
-// ==== Navbar badge + live region (opcional si tienes #cartLive) ====
 function pintarBadge() {
   const badge = $("#badgeCarrito");
   if (badge) badge.textContent = totalItems();
@@ -369,7 +367,6 @@ function buildOrderSummary() {
     const cel = document.getElementById("yapePhone")?.value || "";
     if (cel) pagoStr += ` (${cel})`;
   }
-  // Si quieres mostrar pagoStr en una etiqueta aparte, crea un span con id="billPago" y setéalo aquí.
 
   // 5) ID de pedido
   const orderId = document.getElementById("orderId");

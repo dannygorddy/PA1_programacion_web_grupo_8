@@ -269,9 +269,9 @@ h1.h4, .h4 {
 }
 /* === Estilos exclusivos para la página de Carrito === */
 .carrito-page {
-  background-color: #f0f0f0; /* fondo gris clarito */
+  background-color: #f0f0f0; 
   color: #222;
-  padding-bottom: 72px; /* espacio para barra inferior */
+  padding-bottom: 72px; 
 }
 
 /* Tarjetas y formularios solo en carrito */
