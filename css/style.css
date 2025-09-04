@@ -359,3 +359,13 @@ h1.h4, .h4 {
   #modalCompra .modal-dialog { width: 100% !important; max-width: none !important; }
   #modalCompra .modal-content { border: 0; box-shadow: none; }
 }
+.brand-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;     /* redondo */
+  object-fit: cover;      /* llena el círculo sin deformar */
+  background: #fff;       /* aro blanco sutil */
+  padding: 2px;           /* grosor del aro */
+  box-shadow: 0 0 0 1px rgba(255,255,255,.6); /* delineado suave sobre bg oscuro */
+  display: block;
+}
