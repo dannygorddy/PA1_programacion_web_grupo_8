@@ -35,21 +35,6 @@ Desarrollamos **“Cusco Store**, una plataforma de compra sencilla que incluye:
 - Una **factura imprimible** para cada pedido realizado.  
 
 ---
-
-## 🏗️ Estructura del proyecto
-mi-tienda-online/
-├── index.html # Página de inicio
-├── tienda.html # Catálogo de productos
-├── carrito.html # Carrito y proceso de compra
-├── pedidos.html # Historial de pedidos realizados
-├── factura.html # Factura de cada pedido
-├── css/
-│ └── style.css # Estilos personalizados
-├── js/
-│ └── script.js # Lógica y funcionalidades
-└── img/ # Imágenes de productos
-
----
 ## ⚙️ Funcionalidades principales
 
 ### 🔹 Navegación y catálogo
