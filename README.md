@@ -2,7 +2,7 @@
 
 ## 👥 Integrantes
 - Danny Gorddy Huaman Chavez  ----  100 %
-- - Participante 2: ______________________  
+- Participante 2: Isaac Enrique Curitomay Guillén ---- 75% 
 - Participante 3: ______________________  
 - Participante 4: ______________________  
 - Participante 5: ______________________  
