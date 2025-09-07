@@ -1,17 +1,15 @@
-# 🛒 Proyecto PA1 — Grupo 8 - tienda online 
+# 🛒 Proyecto PA1 — Grupo 8 - tienda online Cusco Store
 
 ## 👥 Integrantes
 - Danny Gorddy Huaman Chavez  ----  100 %
-- - Participante 2: ______________________  
-- Participante 3: ______________________  
-- Participante 4: ______________________  
-- Participante 5: ______________________  
-
+- Joan Orlando Quintana Rosales ---- 100 %
+- Isaac Enrique Curitomay Guillén  ---- 100 %
+- Jhon James Asto Alfaro ---- 100 %
 ---
 
 ## 📌 CUSCO STORE
 
-Hemos desarrollado una página de tienda online llamada: " Cusco Store " como simulación de un comercio electrónico moderno. El proyecto cuenta con **tres categorías principales de productos**:  
+El grupo 8 hemos desarrollado una página de tienda online llamada: " Cusco Store " como simulación de un comercio electrónico moderno. El proyecto cuenta con **tres categorías principales de productos**:  
 
 - 🥫 **Abarrotes**  
 - 🧸 **Juguetería**  
@@ -21,7 +19,7 @@ Desde el **inicio**, el usuario puede acceder al catálogo, explorar las categor
 
 Una vez finalizada la compra, el sistema genera un **pedido con un identificador único** que se almacena en el navegador. Dichos pedidos quedan registrados en una **lista de pedidos** accesible desde el carrito, y cada pedido puede abrirse para visualizar su **factura detallada e imprimible**, con desglose de subtotal, IGV, envío, descuento y total final.  
 
-Este proyecto integra HTML, CSS, JavaScript y como framework: Bootstrap mediante  en la construcción de un flujo completo de compra en línea, mostrando cómo se combinan las tecnologías web para dar solución a un problema cotidiano como el comercio digital.  
+Este proyecto integra HTML, CSS, JavaScript y como framework: Bootstrap en la construcción de un flujo completo de compra en línea, mostrando cómo se combinan las tecnologías web para dar solución a un problema cotidiano como el comercio digital.  
 
 ---
 ## ⚙️ Funcionalidades principales
